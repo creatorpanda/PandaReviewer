@@ -11,4 +11,6 @@ Because you can scan any PC's specs, anytime! No disassembling, no Googling, no 
 
 *I believe that this is going to help many **tech support** people, and helping is what I love doing!*
 
+***SUPER WARNING!!!: Your Windows Defender (or other programs) may tag this file as "not safe" or something and try to prevent you from running it (maybe because it digs for the PC's specs). Don't worry, it's false positive! It's totally safe!***
+
 In case you don't know what to do: Click on the green "Clone or Download" button, click "Download Zip". Unzip it and run "PandaReviewer.bat".
