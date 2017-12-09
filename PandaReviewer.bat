@@ -9,31 +9,49 @@ ECHO ---------------------------------------------------------------------------
 ECHO.
 ECHO Basic Info:
 ECHO.
+wmic bios get serialnumber
+ECHO.
 systeminfo | find /V /I "hotfix" | find /V "KB"
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
-ECHO Motherboard's Information:
+ECHO Motherboard Information:
 ECHO.
 wmic baseboard get Name, product, Manufacturer, Version
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
-ECHO CPU's Information:
+ECHO CPU Information:
 ECHO.
 wmic cpu get Name
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
-ECHO RAM's Information:
+ECHO RAM Information:
 ECHO.
 wmic MemoryChip get Name, BankLabel, Capacity, MemoryType, TypeDetail, Speed
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
-ECHO GPU's Information:
+ECHO GPU Information:
 ECHO.
 wmic path win32_VideoController get Name
+ECHO.
+ECHO ---------------------------------------------------------------------------
+ECHO.
+ECHO Storage Information:
+ECHO.
+wmic logicaldisk get  Deviceid, description, filesystem, size,  freespace
+ECHO.
+ECHO ---------------------------------------------------------------------------
+ECHO.
+ECHO Screen Information:
+ECHO.
+FOR /F "DELIMS=" %%# IN  ('"wmic path Win32_VideoController  get CurrentHorizontalResolution,CurrentVerticalResolution /format:value"') do (
+  set "%%#">nul
+)
+
+ECHO Resolution: %CurrentHorizontalResolution% x %CurrentVerticalResolution%
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
