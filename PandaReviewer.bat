@@ -17,13 +17,17 @@ ECHO ---------------------------------------------------------------------------
 ECHO.
 ECHO Motherboard Information:
 ECHO.
-wmic baseboard get Name, product, Manufacturer, Version
+wmic baseboard get Name, product, Manufacturer, Version, Status
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
 ECHO CPU Information:
 ECHO.
 wmic cpu get Name
+ECHO.
+wmic cpu get Version, deviceid, Status
+ECHO.
+wmic cpu get architecture,  datawidth, StatusInfo,family
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
@@ -35,7 +39,7 @@ ECHO ---------------------------------------------------------------------------
 ECHO.
 ECHO GPU Information:
 ECHO.
-wmic path win32_VideoController get Name
+wmic path win32_VideoController get Name, Status
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
@@ -47,11 +51,14 @@ ECHO ---------------------------------------------------------------------------
 ECHO.
 ECHO Screen Information:
 ECHO.
+wmic desktopmonitor get name, status
+ECHO.
 FOR /F "DELIMS=" %%# IN  ('"wmic path Win32_VideoController  get CurrentHorizontalResolution,CurrentVerticalResolution /format:value"') do (
   set "%%#">nul
 )
 
-ECHO Resolution: %CurrentHorizontalResolution% x %CurrentVerticalResolution%
+ECHO Resolution
+ECHO %CurrentHorizontalResolution% x %CurrentVerticalResolution%
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
