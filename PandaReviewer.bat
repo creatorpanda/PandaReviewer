@@ -56,9 +56,14 @@ ECHO.
 FOR /F "DELIMS=" %%# IN  ('"wmic path Win32_VideoController  get CurrentHorizontalResolution,CurrentVerticalResolution /format:value"') do (
   set "%%#">nul
 )
-
 ECHO Resolution
 ECHO %CurrentHorizontalResolution% x %CurrentVerticalResolution%
+ECHO.
+ECHO ---------------------------------------------------------------------------
+ECHO.
+ECHO Network Information:
+ECHO.
+ipconfig/all
 ECHO.
 ECHO ---------------------------------------------------------------------------
 ECHO.
