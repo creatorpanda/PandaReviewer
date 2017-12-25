@@ -11,6 +11,8 @@ ECHO Basic Info:
 ECHO.
 wmic bios get serialnumber
 ECHO.
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+ECHO.
 systeminfo | find /V /I "hotfix" | find /V "KB"
 ECHO.
 ECHO ---------------------------------------------------------------------------
