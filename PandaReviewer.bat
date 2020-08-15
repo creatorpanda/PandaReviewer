@@ -12,9 +12,9 @@ ECHO.
 ECHO -------------- WINDOWS LICENSE DESCRIPTION --------------
 ECHO.
 ECHO RETAIL: Best key: you can use it again on this device if you ever consider a format 
-ECHO + you're not going to lose activation if you change PC parts (despite HDD/SSD or RAMs)
+ECHO + you're not going to lose activation if you change PC parts
 ECHO.
-ECHO OEM: Only available for this PC: You also cannot change PC parts (despite HDD/SSD or RAMs) or you will lose activation.
+ECHO OEM: Only available for this PC: You also cannot change PC parts (despite HDD/SSD and RAMs) or you will lose activation.
 ECHO.
 ECHO VOLUME: Please consider finding another Windows Key. This key type can even be a tracked, cracked, or hacked Windows version!!!
 ECHO.
