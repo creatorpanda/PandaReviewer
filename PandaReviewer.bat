@@ -11,11 +11,11 @@ ECHO Basic Info:
 ECHO.
 ECHO -------------- WINDOWS LICENSE DESCRIPTION --------------
 ECHO.
-ECHO RETAIL: Best key: you can use it again on this device if you perform a format. No issues with new parts.
+ECHO RETAIL: You can use it on this device or move it on to a new machine.
 ECHO.
-ECHO OEM: Only for this PC: You cannot change PC parts (despite HDD/SSD and RAMs) or you will lose activation.
+ECHO OEM: This key works only on this machine.
 ECHO.
-ECHO VOLUME: Please consider finding another Windows Key. This can even be a cracked, tracked, or hacked Windows version!!!
+ECHO VOLUME: Please consider finding another Windows Key. This key could expire soon or even be a cracked, tracked, or hacked Windows version!
 ECHO.
 ECHO -------------- WINDOWS LICENSE DESCRIPTION --------------
 ECHO Please close pop-up windows to continue..
