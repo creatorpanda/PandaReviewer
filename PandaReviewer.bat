@@ -11,20 +11,22 @@ ECHO Basic Info:
 ECHO.
 ECHO -------------- WINDOWS LICENSE DESCRIPTION --------------
 ECHO.
-ECHO RETAIL: You can use it on this device or move it on to a new machine.
+ECHO RETAIL: You can transfer the product key to another computer, as long as you deactivate the old device.
 ECHO.
-ECHO OEM: This key works only on this machine.
+ECHO OEM: Should only be provided by system Builders and it is a legit licence. If that licence came pre-installed on your PC, you can use that to re-install Windows on that PC any number of times.
 ECHO.
-ECHO VOLUME: Please consider finding another Windows Key. This key could expire soon or even be a cracked, tracked, or hacked Windows version!
+ECHO VOLUME: Designed for a large business, education, and government scenario. Usually, it allows organizations to use one master product key to activate any installation of Windows.
 ECHO.
 ECHO -------------- WINDOWS LICENSE DESCRIPTION --------------
 ECHO Please close pop-up windows to continue..
 ECHO.
 slmgr -dli
 ECHO.
+ECHO Device's Serial Number
 wmic bios get serialnumber
 ECHO.
-wmic path softwarelicensingservice get OA3xOriginalProductKey
+ECHO Windows Product Key (Activation Key)
+reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform" /v BackupProductKeyDefault
 ECHO.
 systeminfo | find /V /I "hotfix" | find /V "KB"
 ECHO.
