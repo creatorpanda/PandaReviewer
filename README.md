@@ -2,7 +2,7 @@
 
 #### *The development of the script is officially complete. From now on, only compatibility procedures will be executed.*
 
-![PandareviewerVT](https://github.com/creatorpanda/PandaReviewer/blob/master/pics/PandareviewerVT.png)\
+![PandaRevVT](https://github.com/creatorpanda/PandaReviewer/blob/master/pics/PandaRevVT.png)\
 *Perfect VT Score! [Click here](https://www.virustotal.com/gui/file/6555644b55bfcadc97f14cb3e48c8e36393f331895f20850140ec13a16ca2de0) for additional information.*
 
 
